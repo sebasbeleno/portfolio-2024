@@ -1,0 +1,123 @@
+---
+import { Image } from "astro:assets";
+import JS from "../../public/js.svg";
+import TS from "../../public/ts.svg";
+import React from "../../public/react.svg";
+import Next from "../../public/next.svg";
+import Kotlin from "../../public/kotlin.svg";
+import Java from "../../public/java.svg";
+import Swift from "../../public/swift.svg";
+import Postgres from "../../public/postgres.svg";
+import Mongo from "../../public/mongo.svg";
+import Supabase from "../../public/supabase.svg";
+import Firebase from "../../public/firebase.svg";
+import Gcloud from "../../public/gcloud.svg";
+import Fastlane from "../../public/fastlane.svg";
+import Docker from "../../public/docker.svg";
+import Codemagic from "../../public/codemagic.svg";
+---
+
+<div class="scroll-container relative !z-10">
+  <div class="carousel-primary">
+    <Image src={JS} alt={"Javascript"} />
+    <Image src={TS} alt={"Javascript"} />
+    <Image src={React} alt={"Javascript"} />
+    <Image src={Next} alt={"Javascript"} />
+    <Image src={Kotlin} alt={"Javascript"} />
+    <Image src={Java} alt={"Javascript"} />
+    <Image src={Swift} alt={"Javascript"} />
+    <Image src={Postgres} alt={"Javascript"} />
+    <Image src={Mongo} alt={"Javascript"} />
+    <Image src={Supabase} alt={"Javascript"} />
+    <Image src={Firebase} alt={"Javascript"} />
+    <Image src={Gcloud} alt={"Javascript"} />
+    <Image src={Fastlane} alt={"Javascript"} />
+    <Image src={Docker} alt={"Javascript"} />
+  </div>
+  <div class="carousel-primary carousel-secondary">
+    <Image src={JS} alt={"Javascript"} />
+    <Image src={TS} alt={"Javascript"} />
+    <Image src={React} alt={"Javascript"} />
+    <Image src={Next} alt={"Javascript"} />
+    <Image src={Kotlin} alt={"Javascript"} />
+    <Image src={Java} alt={"Javascript"} />
+    <Image src={Swift} alt={"Javascript"} />
+    <Image src={Postgres} alt={"Javascript"} />
+    <Image src={Mongo} alt={"Javascript"} />
+    <Image src={Supabase} alt={"Javascript"} />
+    <Image src={Firebase} alt={"Javascript"} />
+    <Image src={Gcloud} alt={"Javascript"} />
+    <Image src={Fastlane} alt={"Javascript"} />
+    <Image src={Docker} alt={"Javascript"} />
+  </div>
+  <div class="absolute bg-gradient-to-r from-[#151515] to-transparent h-20 w-44">
+  </div>
+  <div
+    class="absolute top-0 right-0 bg-gradient-to-r from-transparent to-[#151515] h-20 w-44"
+  >
+  </div>
+</div>
+
+<style>
+  .scroll-container {
+  }
+
+  .carousel-primary,
+  .carousel-secondary {
+    top: 0;
+    left: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+  }
+
+  .carousel-primary img {
+    width: 100%;
+    margin-left: 20px;
+    border-radius: 14px;
+  }
+
+  .carousel-primary {
+    display: flex;
+    justify-content: space-around;
+    animation: scroll-horizontal 20s linear infinite;
+  }
+
+  .carousel-secondary {
+    animation: scroll-horizontal 20s linear infinite;
+    animation-delay: 10s;
+  }
+
+  @keyframes scroll-horizontal {
+    0% {
+      left: 100%;
+    }
+
+    100% {
+      left: -100%;
+    }
+  }
+
+  .carousel-primary:hover,
+  .carousel-primary:hover ~ .carousel-secondary {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+
+  .carousel-secondary:hover {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+
+  .scroll-container:hover > .carousel-primary:not(:hover) {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+</style>
