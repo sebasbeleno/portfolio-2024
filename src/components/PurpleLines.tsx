@@ -34,7 +34,7 @@ const HomeLanding = () => {
       height="769"
       viewBox="0 0 974 769"
       fill="none"
-      className="absolute -top-0  md:-top-0 w-full !z-0"
+      className="absolute -top-200  md:top-20 w-full !z-0"
     >
       <motion.path
         opacity="0.5"
