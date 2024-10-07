@@ -1,0 +1,85 @@
+<div
+  class={`relative  w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out`}
+>
+  <div class="max-w-6xl mx-auto px-6 md:px-0">
+    <div class="flex items-center justify-between h-16 md:h-20">
+      <div class="shrink-0 mr-4 cursor-pointer" id="email-button">
+        <span
+          class="inline-flex space-x-2 h-full animate-background-shine cursor-pointer items-center justify-center rounded-full border border-gray-800 bg-[linear-gradient(110deg,#000,45%,#4D4B4B,55%,#000)] bg-[length:250%_100%] px-3 py-1 text-xs font-medium text-gray-300"
+        >
+          <p class="text-sm">sebasbeleno15@gmail.com</p>
+
+          <svg
+            width="20px"
+            height="20px"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            color="#000000"
+            ><path
+              d="M8.5 4H6C4.89543 4 4 4.89543 4 6V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V6C20 4.89543 19.1046 4 18 4H15.5"
+              stroke="#fff"
+              stroke-width="1.5"
+              stroke-linecap="round"></path><path
+              d="M8 6.4V4.5C8 4.22386 8.22386 4 8.5 4C8.77614 4 9.00422 3.77604 9.05152 3.50398C9.19968 2.65171 9.77399 1 12 1C14.226 1 14.8003 2.65171 14.9485 3.50398C14.9958 3.77604 15.2239 4 15.5 4C15.7761 4 16 4.22386 16 4.5V6.4C16 6.73137 15.7314 7 15.4 7H8.6C8.26863 7 8 6.73137 8 6.4Z"
+              stroke="#fff"
+              stroke-width="1.5"
+              stroke-linecap="round"></path></svg
+          >
+        </span>
+        <!--?xml version="1.0" encoding="UTF-8"?-->
+      </div>
+
+      <span id="clipboard-tooltip" class="transition-all transform opacity-0">
+        <p>Copied!🚀</p>
+      </span>
+
+      <nav class="hidden md:flex md:grow">
+        <ul class="flex grow justify-end flex-wrap items-center gap-x-6">
+          <li>
+            <a
+              href="https://ymdyewlwgubrcrcarsjg.supabase.co/storage/v1/object/public/assets/Sebastian_Herrera_Resume.pdf"
+              target="_blank"
+            >
+              Resume
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/sebasbeleno/" target="_blank"
+              >Linkedin</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/sebasbeleno/" target="_blank">Github</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<script>
+  const emailButton = document.getElementById("email-button");
+
+  if (emailButton) {
+    emailButton.addEventListener("click", () => {
+      navigator.clipboard.writeText("sebasbeleno15@gmail.com");
+      showClipboardTooltip();
+    });
+  }
+
+  const clipboardTooltip = document.getElementById("clipboard-tooltip");
+
+  function showClipboardTooltip() {
+    if (clipboardTooltip) {
+      clipboardTooltip.classList.remove("opacity-0");
+      clipboardTooltip.classList.add("opacity-100");
+
+      setTimeout(() => {
+        clipboardTooltip.classList.add("opacity-0");
+        clipboardTooltip.classList.remove("opacity-100");
+      }, 2000);
+    }
+  }
+</script>
