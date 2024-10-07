@@ -12,6 +12,7 @@ interface ProjectCardsProps {
   appStoreUrl: string;
   webUrl: string;
   githubUrl: string;
+  coomingSoon: boolean;
 }
 
 const {
@@ -24,6 +25,7 @@ const {
   playStoreUrl,
   appStoreUrl,
   githubUrl,
+  coomingSoon,
 } = Astro.props;
 
 const optimizedBackgroundImage = await getImage({
@@ -39,12 +41,16 @@ const optmiizedLogo = await getImage({
 ---
 
 <section
-  class="relative !z-50 max-w-6xl mx-10 md:mx-auto px-4 sm:px-6 rounded-lg md:h-96 h-96 mb-10 overflow-hidden bg-cover"
+  class="relative !z-50 max-w-6xl mx-10 md:mx-auto px-4 sm:px-6 rounded-lg md:h-96 h-96 mb-10 overflow-hidden bg-cover "
   style={`background-image: url(${optimizedBackgroundImage.src}); `}
 >
-  <div class="group h-full content-center ">
-    <div class="flex group-hover:opacity-20 transition-all overflow-hidden ">
-      <div class="relative flex  md:space-x-4 items-center flex-col md:flex-row justify-between md:justify-start w-full md:w-2/3 overflow-hidden">
+ 
+  </div>
+  <div class="group h-full content-center">
+    <div class="flex group-hover:opacity-20 transition-all overflow-hidden">
+      <div
+        class="relative flex md:space-x-4 items-center flex-col md:flex-row justify-between md:justify-start w-full md:w-2/3 overflow-hidden"
+      >
         <Picture
           src={optmiizedLogo.src}
           alt="Project Logo"
@@ -54,7 +60,7 @@ const optmiizedLogo = await getImage({
           loading={"eager"}
         />
         <div class="space-y-2 w-3/4 text-center md:text-left">
-          <h1 class="md:text-5xl  text-4xl font-bold">{projectTitle}</h1>
+          <h1 class="md:text-5xl text-4xl font-bold">{projectTitle}</h1>
           <h2 class="md:text-lg">{projectShortDesc}</h2>
         </div>
       </div>
@@ -63,9 +69,7 @@ const optmiizedLogo = await getImage({
           <Image
             src={image}
             alt="Project Mock"
-            width={200}
-            height={200}
-            class="md:w-64 -right-10 hidden md:block"
+            class="md:w-80 -right-10 hidden md:block"
             loading={"eager"}
           />
         )
@@ -76,14 +80,22 @@ const optmiizedLogo = await getImage({
       <div class="max-w-6xl mx-auto md:px-4 sm:px-6">
         {/* Hidden content */}
         <div
-          class=" transition-all transform
+          class="transition-all transform
                                   translate-y-8 opacity-0
                                   group-hover:opacity-100
                                   group-hover:-translate-y-10"
         >
-          <div class="md:p-2 space-y-4  ">
+          <div class="md:p-2 space-y-4">
             <p>{longDesc}</p>
             <div class="flex space-x-4">
+              {
+                coomingSoon && (
+                  <span class="inline-flex h-full animate-background-shine items-center justify-center rounded-full border border-gray-800 bg-[linear-gradient(110deg,#000,45%,#4D4B4B,55%,#000)] bg-[length:250%_100%] px-3 py-1 text-xs font-medium text-gray-300">
+                    Cooming Soon
+                  </span>
+                )
+              }
+
               {
                 playStoreUrl && (
                   <a href={playStoreUrl} target="_blank">

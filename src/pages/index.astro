@@ -1,6 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
+
+import TransfirioBackgroundImage from "/public/transfirioCardBackground.png";
+import TransfirioMock from "/public/transfirioMock.png";
+import TransfirioLogo from "/public/transfirioLogo.png";
+
 import MonyBackgroundImage from "/public/monyCardBackground.png";
 import MonyMock from "/public/monyMock.png";
 import MonyLogo from "/public/monyLogo.png";
@@ -24,6 +29,15 @@ They will be able to create alerts about future payments, expense warning alerts
     <!-- <TechStack />  -->
 
     <SectionTitle title="Side Projects" />
+    <ProjectCard
+      backgroundImage={TransfirioBackgroundImage}
+      logo={TransfirioLogo}
+      image={TransfirioMock}
+      projectTitle="Transfirio"
+      projectShortDesc="Administra tus transferencias de tu negocio de forma fácil y rápida usando Machine Learning"
+      longDesc={MONY_DESCRIPTION}
+      coomingSoon={true}
+    />
     <ProjectCard
       backgroundImage={MonyBackgroundImage}
       logo={MonyLogo}

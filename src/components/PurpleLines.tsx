@@ -40,7 +40,7 @@ const HomeLanding = () => {
         opacity="0.5"
         d="M2.47886 699.319C2.47886 699.319 -52.3029 260.828 440.97 260.828C934.243 260.828 879.461 -177.664 879.461 -177.664"
         stroke="url(#paint0_linear_4_20)"
-        stroke-width="0.987858"
+        strokeWidth="0.987858"
         initial={{
           pathLength: 1,
         }}
@@ -54,7 +54,7 @@ const HomeLanding = () => {
         opacity="0.5"
         d="M12.2611 704.21C12.2611 704.21 -42.5207 265.719 450.752 265.719C944.025 265.719 889.243 -172.772 889.243 -172.772"
         stroke="url(#paint1_linear_4_20)"
-        stroke-width="0.987858"
+        strokeWidth="0.987858"
         initial={{
           pathLength: 1,
         }}
@@ -67,7 +67,7 @@ const HomeLanding = () => {
         opacity="0.5"
         d="M20.087 711.058C20.087 711.058 -34.6948 272.566 458.578 272.566C951.851 272.566 897.069 -165.925 897.069 -165.925"
         stroke="url(#paint2_linear_4_20)"
-        stroke-width="0.987858"
+        strokeWidth="0.987858"
         initial={{
           pathLength: 1,
         }}
@@ -80,7 +80,7 @@ const HomeLanding = () => {
         opacity="0.5"
         d="M27.9129 717.905C27.9129 717.905 -26.8689 279.414 466.404 279.414C959.677 279.414 904.895 -159.078 904.895 -159.078"
         stroke="url(#paint3_linear_4_20)"
-        stroke-width="0.987858"
+        strokeWidth="0.987858"
         initial={{
           pathLength: 1,
         }}
@@ -93,7 +93,7 @@ const HomeLanding = () => {
         opacity="0.5"
         d="M36.7169 724.753C36.7169 724.753 -18.0649 286.262 475.208 286.262C968.481 286.262 913.699 -152.23 913.699 -152.23"
         stroke="url(#paint4_linear_4_20)"
-        stroke-width="0.987858"
+        strokeWidth="0.987858"
         initial={{
           pathLength: 1,
         }}
@@ -106,7 +106,7 @@ const HomeLanding = () => {
         opacity="0.5"
         d="M46.4991 729.644C46.4991 729.644 -8.28267 291.153 484.99 291.153C978.263 291.153 923.481 -147.338 923.481 -147.338"
         stroke="url(#paint5_linear_4_20)"
-        stroke-width="0.987858"
+        strokeWidth="0.987858"
         initial={{
           pathLength: 1,
         }}
@@ -119,7 +119,7 @@ const HomeLanding = () => {
         opacity="0.5"
         d="M54.325 736.492C54.325 736.492 -0.456739 298 492.816 298C986.089 298 931.307 -140.491 931.307 -140.491"
         stroke="url(#paint6_linear_4_20)"
-        stroke-width="0.987858"
+        strokeWidth="0.987858"
         initial={{
           pathLength: 1,
         }}
@@ -132,7 +132,7 @@ const HomeLanding = () => {
         opacity="0.5"
         d="M62.1509 743.339C62.1509 743.339 7.36916 304.848 500.642 304.848C993.915 304.848 939.133 -133.643 939.133 -133.643"
         stroke="url(#paint7_linear_4_20)"
-        stroke-width="0.987858"
+        strokeWidth="0.987858"
         initial={{
           pathLength: 1,
         }}
@@ -145,7 +145,7 @@ const HomeLanding = () => {
         opacity="0.5"
         d="M68.9983 750.187C68.9983 750.187 14.2166 311.696 507.489 311.696C1000.76 311.696 945.981 -126.796 945.981 -126.796"
         stroke="url(#paint8_linear_4_20)"
-        stroke-width="0.987858"
+        strokeWidth="0.987858"
         initial={{
           pathLength: 1,
         }}
@@ -158,7 +158,7 @@ const HomeLanding = () => {
         opacity="0.5"
         d="M78.7809 755.078C78.7809 755.078 23.9991 316.587 517.272 316.587C1010.54 316.587 955.763 -121.905 955.763 -121.905"
         stroke="url(#paint9_linear_4_20)"
-        stroke-width="0.987858"
+        strokeWidth="0.987858"
         initial={{
           pathLength: 1,
         }}
@@ -171,7 +171,7 @@ const HomeLanding = () => {
         opacity="0.5"
         d="M86.6065 761.926C86.6065 761.926 31.8248 323.434 525.098 323.434C1018.37 323.434 963.589 -115.057 963.589 -115.057"
         stroke="url(#paint10_linear_4_20)"
-        stroke-width="0.987858"
+        strokeWidth="0.987858"
         initial={{
           pathLength: 1,
         }}
@@ -184,7 +184,7 @@ const HomeLanding = () => {
         opacity="0.5"
         d="M94.4325 768.773C94.4325 768.773 39.6507 330.282 532.924 330.282C1026.2 330.282 971.415 -108.209 971.415 -108.209"
         stroke="url(#paint11_linear_4_20)"
-        stroke-width="0.987858"
+        strokeWidth="0.987858"
         initial={{
           pathLength: 1,
         }}
@@ -200,7 +200,7 @@ const HomeLanding = () => {
         opacity="0.2"
         d="M2.47886 699.319C2.47886 699.319 -52.3029 260.828 440.97 260.828C934.243 260.828 879.461 -177.664 879.461 -177.664"
         stroke="url(#paint0_linear_4_20)"
-        stroke-width="0.987858"
+        strokeWidth="0.987858"
         filter="url(#blurMe)"
         pathLength={1}
       />
@@ -208,7 +208,7 @@ const HomeLanding = () => {
         opacity="0.2"
         d="M12.2611 704.21C12.2611 704.21 -42.5207 265.719 450.752 265.719C944.025 265.719 889.243 -172.772 889.243 -172.772"
         stroke="url(#paint1_linear_4_20)"
-        stroke-width="0.987858"
+        strokeWidth="0.987858"
         filter="url(#blurMe)"
         pathLength={1}
       />
@@ -216,7 +216,7 @@ const HomeLanding = () => {
         opacity="0.2"
         d="M20.087 711.058C20.087 711.058 -34.6948 272.566 458.578 272.566C951.851 272.566 897.069 -165.925 897.069 -165.925"
         stroke="url(#paint2_linear_4_20)"
-        stroke-width="0.987858"
+        strokeWidth="0.987858"
         filter="url(#blurMe)"
         pathLength={1}
       />
@@ -224,7 +224,7 @@ const HomeLanding = () => {
         opacity="0.2"
         d="M27.9129 717.905C27.9129 717.905 -26.8689 279.414 466.404 279.414C959.677 279.414 904.895 -159.078 904.895 -159.078"
         stroke="url(#paint3_linear_4_20)"
-        stroke-width="0.987858"
+        strokeWidth="0.987858"
         filter="url(#blurMe)"
         pathLength={1}
       />
@@ -232,7 +232,7 @@ const HomeLanding = () => {
         opacity="0.2"
         d="M36.7169 724.753C36.7169 724.753 -18.0649 286.262 475.208 286.262C968.481 286.262 913.699 -152.23 913.699 -152.23"
         stroke="url(#paint4_linear_4_20)"
-        stroke-width="0.987858"
+        strokeWidth="0.987858"
         filter="url(#blurMe)"
         pathLength={1}
       />
@@ -240,7 +240,7 @@ const HomeLanding = () => {
         opacity="0.2"
         d="M46.4991 729.644C46.4991 729.644 -8.28267 291.153 484.99 291.153C978.263 291.153 923.481 -147.338 923.481 -147.338"
         stroke="url(#paint5_linear_4_20)"
-        stroke-width="0.987858"
+        strokeWidth="0.987858"
         filter="url(#blurMe)"
         pathLength={1}
       />
@@ -248,7 +248,7 @@ const HomeLanding = () => {
         opacity="0.2"
         d="M54.325 736.492C54.325 736.492 -0.456739 298 492.816 298C986.089 298 931.307 -140.491 931.307 -140.491"
         stroke="url(#paint6_linear_4_20)"
-        stroke-width="0.987858"
+        strokeWidth="0.987858"
         filter="url(#blurMe)"
         pathLength={1}
       />
@@ -256,7 +256,7 @@ const HomeLanding = () => {
         opacity="0.2"
         d="M62.1509 743.339C62.1509 743.339 7.36916 304.848 500.642 304.848C993.915 304.848 939.133 -133.643 939.133 -133.643"
         stroke="url(#paint7_linear_4_20)"
-        stroke-width="0.987858"
+        strokeWidth="0.987858"
         filter="url(#blurMe)"
         pathLength={1}
       />
@@ -264,7 +264,7 @@ const HomeLanding = () => {
         opacity="0.2"
         d="M68.9983 750.187C68.9983 750.187 14.2166 311.696 507.489 311.696C1000.76 311.696 945.981 -126.796 945.981 -126.796"
         stroke="url(#paint8_linear_4_20)"
-        stroke-width="0.987858"
+        strokeWidth="0.987858"
         filter="url(#blurMe)"
         pathLength={1}
       />
@@ -272,7 +272,7 @@ const HomeLanding = () => {
         opacity="0.2"
         d="M78.7809 755.078C78.7809 755.078 23.9991 316.587 517.272 316.587C1010.54 316.587 955.763 -121.905 955.763 -121.905"
         stroke="url(#paint9_linear_4_20)"
-        stroke-width="0.987858"
+        strokeWidth="0.987858"
         filter="url(#blurMe)"
         pathLength={1}
       />
@@ -280,7 +280,7 @@ const HomeLanding = () => {
         opacity="0.2"
         d="M86.6065 761.926C86.6065 761.926 31.8248 323.434 525.098 323.434C1018.37 323.434 963.589 -115.057 963.589 -115.057"
         stroke="url(#paint10_linear_4_20)"
-        stroke-width="0.987858"
+        strokeWidth="0.987858"
         filter="url(#blurMe)"
         pathLength={1}
       />
@@ -288,7 +288,7 @@ const HomeLanding = () => {
         opacity="0.2"
         d="M94.4325 768.773C94.4325 768.773 39.6507 330.282 532.924 330.282C1026.2 330.282 971.415 -108.209 971.415 -108.209"
         stroke="url(#paint11_linear_4_20)"
-        stroke-width="0.987858"
+        strokeWidth="0.987858"
        filter="url(#blurMe)"
         pathLength={1}
       />
@@ -301,9 +301,9 @@ const HomeLanding = () => {
           y2="699.319"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.0520833" stop-color="#7832D0" stop-opacity="0"></stop>
-          <stop offset="0.510417" stop-color="#7832D0"></stop>
-          <stop offset="0.9375" stop-color="#7832D0" stop-opacity="0"></stop>
+          <stop offset="0.0520833" stopColor="#7832D0" stopOpacity="0"></stop>
+          <stop offset="0.510417" stopColor="#7832D0"></stop>
+          <stop offset="0.9375" stopColor="#7832D0" stopOpacity="0"></stop>
         </linearGradient>
         <linearGradient
           id="paint1_linear_4_20"
@@ -313,9 +313,9 @@ const HomeLanding = () => {
           y2="704.21"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.0520833" stop-color="#7832D0" stop-opacity="0"></stop>
-          <stop offset="0.510417" stop-color="#7832D0"></stop>
-          <stop offset="0.9375" stop-color="#7832D0" stop-opacity="0"></stop>
+          <stop offset="0.0520833" stopColor="#7832D0" stopOpacity="0"></stop>
+          <stop offset="0.510417" stopColor="#7832D0"></stop>
+          <stop offset="0.9375" stopColor="#7832D0" stopOpacity="0"></stop>
         </linearGradient>
         <linearGradient
           id="paint2_linear_4_20"
@@ -325,9 +325,9 @@ const HomeLanding = () => {
           y2="711.058"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.0520833" stop-color="#7832D0" stop-opacity="0"></stop>
-          <stop offset="0.510417" stop-color="#7832D0"></stop>
-          <stop offset="0.9375" stop-color="#7832D0" stop-opacity="0"></stop>
+          <stop offset="0.0520833" stopColor="#7832D0" stopOpacity="0"></stop>
+          <stop offset="0.510417" stopColor="#7832D0"></stop>
+          <stop offset="0.9375" stopColor="#7832D0" stopOpacity="0"></stop>
         </linearGradient>
         <linearGradient
           id="paint3_linear_4_20"
@@ -337,9 +337,9 @@ const HomeLanding = () => {
           y2="717.905"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.0520833" stop-color="#7832D0" stop-opacity="0"></stop>
-          <stop offset="0.510417" stop-color="#7832D0"></stop>
-          <stop offset="0.9375" stop-color="#7832D0" stop-opacity="0"></stop>
+          <stop offset="0.0520833" stopColor="#7832D0" stopOpacity="0"></stop>
+          <stop offset="0.510417" stopColor="#7832D0"></stop>
+          <stop offset="0.9375" stopColor="#7832D0" stopOpacity="0"></stop>
         </linearGradient>
         <linearGradient
           id="paint4_linear_4_20"
@@ -349,9 +349,9 @@ const HomeLanding = () => {
           y2="724.753"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.0520833" stop-color="#7832D0" stop-opacity="0"></stop>
-          <stop offset="0.510417" stop-color="#7832D0"></stop>
-          <stop offset="0.9375" stop-color="#7832D0" stop-opacity="0"></stop>
+          <stop offset="0.0520833" stopColor="#7832D0" stopOpacity="0"></stop>
+          <stop offset="0.510417" stopColor="#7832D0"></stop>
+          <stop offset="0.9375" stopColor="#7832D0" stopOpacity="0"></stop>
         </linearGradient>
         <linearGradient
           id="paint5_linear_4_20"
@@ -361,9 +361,9 @@ const HomeLanding = () => {
           y2="729.644"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.0520833" stop-color="#7832D0" stop-opacity="0"></stop>
-          <stop offset="0.510417" stop-color="#7832D0"></stop>
-          <stop offset="0.9375" stop-color="#7832D0" stop-opacity="0"></stop>
+          <stop offset="0.0520833" stopColor="#7832D0" stopOpacity="0"></stop>
+          <stop offset="0.510417" stopColor="#7832D0"></stop>
+          <stop offset="0.9375" stopColor="#7832D0" stopOpacity="0"></stop>
         </linearGradient>
         <linearGradient
           id="paint6_linear_4_20"
@@ -373,9 +373,9 @@ const HomeLanding = () => {
           y2="736.492"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.0520833" stop-color="#7832D0" stop-opacity="0"></stop>
-          <stop offset="0.510417" stop-color="#7832D0"></stop>
-          <stop offset="0.9375" stop-color="#7832D0" stop-opacity="0"></stop>
+          <stop offset="0.0520833" stopColor="#7832D0" stopOpacity="0"></stop>
+          <stop offset="0.510417" stopColor="#7832D0"></stop>
+          <stop offset="0.9375" stopColor="#7832D0" stopOpacity="0"></stop>
         </linearGradient>
         <linearGradient
           id="paint7_linear_4_20"
@@ -385,9 +385,9 @@ const HomeLanding = () => {
           y2="743.339"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.0520833" stop-color="#7832D0" stop-opacity="0"></stop>
-          <stop offset="0.510417" stop-color="#7832D0"></stop>
-          <stop offset="0.9375" stop-color="#7832D0" stop-opacity="0"></stop>
+          <stop offset="0.0520833" stopColor="#7832D0" stopOpacity="0"></stop>
+          <stop offset="0.510417" stopColor="#7832D0"></stop>
+          <stop offset="0.9375" stopColor="#7832D0" stopOpacity="0"></stop>
         </linearGradient>
         <linearGradient
           id="paint8_linear_4_20"
@@ -397,9 +397,9 @@ const HomeLanding = () => {
           y2="750.187"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.0520833" stop-color="#7832D0" stop-opacity="0"></stop>
-          <stop offset="0.510417" stop-color="#7832D0"></stop>
-          <stop offset="0.9375" stop-color="#7832D0" stop-opacity="0"></stop>
+          <stop offset="0.0520833" stopColor="#7832D0" stopOpacity="0"></stop>
+          <stop offset="0.510417" stopColor="#7832D0"></stop>
+          <stop offset="0.9375" stopColor="#7832D0" stopOpacity="0"></stop>
         </linearGradient>
         <linearGradient
           id="paint9_linear_4_20"
@@ -409,9 +409,9 @@ const HomeLanding = () => {
           y2="755.078"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.0520833" stop-color="#7832D0" stop-opacity="0"></stop>
-          <stop offset="0.510417" stop-color="#7832D0"></stop>
-          <stop offset="0.9375" stop-color="#7832D0" stop-opacity="0"></stop>
+          <stop offset="0.0520833" stopColor="#7832D0" stopOpacity="0"></stop>
+          <stop offset="0.510417" stopColor="#7832D0"></stop>
+          <stop offset="0.9375" stopColor="#7832D0" stopOpacity="0"></stop>
         </linearGradient>
         <linearGradient
           id="paint10_linear_4_20"
@@ -421,9 +421,9 @@ const HomeLanding = () => {
           y2="761.926"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.0520833" stop-color="#7832D0" stop-opacity="0"></stop>
-          <stop offset="0.510417" stop-color="#7832D0"></stop>
-          <stop offset="0.9375" stop-color="#7832D0" stop-opacity="0"></stop>
+          <stop offset="0.0520833" stopColor="#7832D0" stopOpacity="0"></stop>
+          <stop offset="0.510417" stopColor="#7832D0"></stop>
+          <stop offset="0.9375" stopColor="#7832D0" stopOpacity="0"></stop>
         </linearGradient>
         <linearGradient
           id="paint11_linear_4_20"
@@ -433,9 +433,9 @@ const HomeLanding = () => {
           y2="768.773"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.0520833" stop-color="#7832D0" stop-opacity="0"></stop>
-          <stop offset="0.510417" stop-color="#7832D0"></stop>
-          <stop offset="0.9375" stop-color="#7832D0" stop-opacity="0"></stop>
+          <stop offset="0.0520833" stopColor="#7832D0" stopOpacity="0"></stop>
+          <stop offset="0.510417" stopColor="#7832D0"></stop>
+          <stop offset="0.9375" stopColor="#7832D0" stopOpacity="0"></stop>
         </linearGradient>
       </defs>
     </svg>

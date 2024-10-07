@@ -21,7 +21,7 @@ export default function Header() {
         !top ? "bg-stone-950 backdrop-blur-sm shadow-lg" : ""
       }`}
     >
-      <div className="max-w-6xl mx-auto px-5 sm:px-6">
+      <div className="max-w-6xl mx-auto px-6 md:px-0">
         <div className="flex items-center justify-between h-16 md:h-20">
           <div className="shrink-0 mr-4">
             <p>sebasbeleno15@gmail.com</p>
