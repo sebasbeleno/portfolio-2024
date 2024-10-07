@@ -1,18 +1,18 @@
 ---
 import { getImage, Image, Picture } from "astro:assets";
 
-interface ProjectCardsProps {
-  logo: string;
+export interface ProjectCardsProps {
+  logo: ImageMetadata;
   projectTitle: string;
   projectShortDesc: string;
-  image: string;
-  backgroundImage: string;
+  image?: ImageMetadata;
+  backgroundImage: ImageMetadata;
   longDesc: string;
-  playStoreUrl: string;
-  appStoreUrl: string;
-  webUrl: string;
-  githubUrl: string;
-  coomingSoon: boolean;
+  playStoreUrl?: string;
+  appStoreUrl?: string;
+  webUrl?: string;
+  githubUrl?: string;
+  coomingSoon?: boolean;
 }
 
 const {
@@ -45,7 +45,7 @@ const optmiizedLogo = await getImage({
   style={`background-image: url(${optimizedBackgroundImage.src}); `}
 >
   </div>
-  <div class="group h-full content-center">
+  <div class="group h-full flex md:flex-col flex-row items-center md:items-stretch justify-center">
     <div class="flex group-hover:opacity-20 transition-all overflow-hidden">
       <div
         class="relative flex md:space-x-4 items-center flex-col md:flex-row justify-between md:justify-start w-full md:w-2/3 overflow-hidden"
