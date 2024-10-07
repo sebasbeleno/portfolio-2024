@@ -1,13 +1,47 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
-import TechStack from "../components/TechStack.astro";
+import MonyBackgroundImage from "/public/monyCardBackground.png";
+import MonyMock from "/public/monyMock.png";
+import MonyLogo from "/public/monyLogo.png";
+
+import ReportBackoundImage from "/public/reportCardBackground.png";
+import ReportLogo from "/public/reportLogo.png";
+
+import ProjectCard from "../components/ProjectCard.astro";
+import SectionTitle from "../components/SectionTitle.astro";
+
+
+const MONY_DESCRIPTION = `With Mony, users can keep track of expenses, income, debts, recurring payments, credit cards, savings and more.
+They will be able to create alerts about future payments, expense warning alerts, create savings goals and schedule savings reminders and more.
+`;
+
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Sebastian">
   <main>
     <Hero />
-    <!-- <TechStack /> -->
+    <!-- <TechStack />  -->
+
+    <SectionTitle title="Side Projects" />
+    <ProjectCard
+      backgroundImage={MonyBackgroundImage}
+      logo={MonyLogo}
+      image={MonyMock}
+      projectTitle="Mony"
+      projectShortDesc="Finanzas personales"
+      longDesc={MONY_DESCRIPTION}
+      playStoreUrl="https://play.google.com/store/apps/details?id=com.mony"
+      appStoreUrl="https://apps.apple.com/us/app/mony/id1560000000"
+    />
+    <ProjectCard
+      backgroundImage={ReportBackoundImage}
+      logo={ReportLogo}
+      projectTitle="Report"
+      projectShortDesc="League of Legends Open Source Data platform"
+      longDesc={MONY_DESCRIPTION}
+      githubUrl="https://github.com/sebasbeleno/"
+    />
     <div class="h-screen"></div>
     <div class="h-screen"></div>
     <div class="h-screen"></div>

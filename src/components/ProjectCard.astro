@@ -1,0 +1,135 @@
+---
+import { getImage, Image, Picture } from "astro:assets";
+
+interface ProjectCardsProps {
+  logo: string;
+  projectTitle: string;
+  projectShortDesc: string;
+  image: string;
+  backgroundImage: string;
+  longDesc: string;
+  playStoreUrl: string;
+  appStoreUrl: string;
+  webUrl: string;
+  githubUrl: string;
+}
+
+const {
+  backgroundImage,
+  image,
+  projectTitle,
+  projectShortDesc,
+  logo,
+  longDesc,
+  playStoreUrl,
+  appStoreUrl,
+  githubUrl,
+} = Astro.props;
+
+const optimizedBackgroundImage = await getImage({
+  src: backgroundImage,
+  format: "webp",
+  inferSize: true,
+});
+
+const optmiizedLogo = await getImage({
+  src: logo,
+  format: "webp",
+});
+---
+
+<section class="pb-10">
+  <div class="relative z-50 overflow-hidden">
+    <div class="block group">
+      <div
+        class="max-w-6xl mx-auto px-4 sm:px-6 rounded-lg min-h-80 flex group-hover:opacity-20 transition-all"
+        style={`background-image: url(${optimizedBackgroundImage.src}); background-size: 100%;`}
+      >
+        <div class="relative flex space-x-4 items-center w-2/3">
+          <Picture
+            src={optmiizedLogo.src}
+            alt="Project Logo"
+            width={100}
+            height={100}
+            class="w-28"
+          />
+          <div class="space-y-2">
+            <h1 class="text-5xl font-bold">{projectTitle}</h1>
+            <h2 class="text-lg">{projectShortDesc}</h2>
+          </div>
+        </div>
+        {
+          image && (
+            <Image
+              src={image}
+              alt="Project Image"
+              width={200}
+              height={200}
+              class="relative top-14 w-52 -right-10"
+            />
+          )
+        }
+      </div>
+
+      <div class="-translate-y-40">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+          {/* Hidden content */}
+          <div
+            class="transition-all transform
+                                translate-y-8 opacity-0
+                                group-hover:opacity-100
+                                group-hover:translate-y-0"
+          >
+            <div class="p-2 space-y-4">
+              <p>{longDesc}</p>
+              <div class="flex space-x-4">
+                {
+                  playStoreUrl && (
+                    <a href={playStoreUrl} target="_blank">
+                      <Image
+                        src="/public/playStore.png"
+                        alt="Project Logo"
+                        width={100}
+                        height={100}
+                        class="w-8"
+                      />
+                    </a>
+                  )
+                }
+
+                {
+                  appStoreUrl && (
+                    <a href={appStoreUrl} target="_blank">
+                      <Image
+                        src="/public/appStore.png"
+                        alt="Project Logo"
+                        width={100}
+                        height={100}
+                        class="w-8"
+                      />
+                    </a>
+                  )
+                }
+
+                {
+                  githubUrl && (
+                    <a href={githubUrl} target="_blank">
+                      <Image
+                        src="/public/github.png"
+                        alt="Project Logo"
+                        width={100}
+                        height={100}
+                        class="w-8"
+                      />
+                    </a>
+                  )
+                }
+              </div>
+            </div>
+          </div>
+          {/* End of hidden content */}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

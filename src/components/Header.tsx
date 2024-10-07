@@ -17,7 +17,7 @@ export default function Header() {
 
   return (
     <div
-      className={`fixed w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out ${
+      className={`relative  w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out ${
         !top ? "bg-stone-950 backdrop-blur-sm shadow-lg" : ""
       }`}
     >
