@@ -6,8 +6,7 @@ interface SectionTitleProps {
 const { title } = Astro.props;
 ---
 
-<div class="relative !z-50">
-  <div class="max-w-6xl mx-auto mb-10">
-    <h1 class="text-4xl font-bold">{title}</h1>
-  </div>
+<div class="relative !z-50 max-w-6xl mx-auto p-10 md:p-0 md:mb-10 flex justify-between items-center content-center">
+  <h1 class="text-4xl font-bold">{title}</h1>
+  <div class="h-0.5 bg-slate-50 bg-opacity-50 w-3/4 hidden md:block"/>
 </div>

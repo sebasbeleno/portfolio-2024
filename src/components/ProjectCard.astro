@@ -39,58 +39,61 @@ const optmiizedLogo = await getImage({
 ---
 
 <section
-  class="relative !z-50 max-w-6xl mx-auto px-4 sm:px-6 rounded-lg h-96 mb-10 overflow-hidden"
-  style={`background-image: url(${optimizedBackgroundImage.src}); background-size: 100%;`}
+  class="relative !z-50 max-w-6xl mx-10 md:mx-auto px-4 sm:px-6 rounded-lg md:h-96 h-96 mb-10 overflow-hidden bg-cover"
+  style={`background-image: url(${optimizedBackgroundImage.src}); `}
 >
   <div class="group h-full content-center ">
     <div class="flex group-hover:opacity-20 transition-all overflow-hidden ">
-      <div class="relative flex space-x-4 items-center w-2/3 overflow-hidden">
+      <div class="relative flex  md:space-x-4 items-center flex-col md:flex-row justify-between md:justify-start w-full md:w-2/3 overflow-hidden">
         <Picture
           src={optmiizedLogo.src}
           alt="Project Logo"
           width={100}
           height={100}
-          class="w-28"
+          class="md:w-28 w-16"
+          loading={"eager"}
         />
-        <div class="space-y-2">
-          <h1 class="text-5xl font-bold">{projectTitle}</h1>
-          <h2 class="text-lg">{projectShortDesc}</h2>
+        <div class="space-y-2 w-3/4 text-center md:text-left">
+          <h1 class="md:text-5xl  text-4xl font-bold">{projectTitle}</h1>
+          <h2 class="md:text-lg">{projectShortDesc}</h2>
         </div>
       </div>
       {
         image && (
           <Image
             src={image}
-            alt="Project Image"
+            alt="Project Mock"
             width={200}
             height={200}
-            class="w-64 -right-10 "
+            class="md:w-64 -right-10 hidden md:block"
+            loading={"eager"}
           />
         )
       }
     </div>
 
     <div class="absolute bottom-0">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="max-w-6xl mx-auto md:px-4 sm:px-6">
         {/* Hidden content */}
         <div
-          class="transition-all transform
+          class=" transition-all transform
                                   translate-y-8 opacity-0
                                   group-hover:opacity-100
                                   group-hover:-translate-y-10"
         >
-          <div class="p-2 space-y-4">
+          <div class="md:p-2 space-y-4  ">
             <p>{longDesc}</p>
             <div class="flex space-x-4">
               {
                 playStoreUrl && (
                   <a href={playStoreUrl} target="_blank">
                     <Image
-                      src="/public/playStore.png"
+                      src="/playStore.png"
                       alt="Project Logo"
                       width={100}
                       height={100}
                       class="w-8"
+                      loading={"eager"}
                     />
                   </a>
                 )
@@ -100,11 +103,12 @@ const optmiizedLogo = await getImage({
                 appStoreUrl && (
                   <a href={appStoreUrl} target="_blank">
                     <Image
-                      src="/public/appStore.png"
+                      src="/appStore.png"
                       alt="Project Logo"
                       width={100}
                       height={100}
                       class="w-8"
+                      loading={"eager"}
                     />
                   </a>
                 )
@@ -114,11 +118,12 @@ const optmiizedLogo = await getImage({
                 githubUrl && (
                   <a href={githubUrl} target="_blank">
                     <Image
-                      src="/public/github.png"
+                      src="/github.png"
                       alt="Project Logo"
                       width={100}
                       height={100}
                       class="w-8"
+                      loading={"eager"}
                     />
                   </a>
                 )
