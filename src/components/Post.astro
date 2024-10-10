@@ -21,7 +21,9 @@ const imageURL = getCldOgImageUrl({
 ---
 <a href={"/blog/" + slug}>
   <div class="min-h-64 p-10 bg-black hover:rounded-2xl rounded-lg transition-all flex flex-col-reverse hover:border-purple-200 border border-solid border-transparent" style={`background-image: url(${imageURL}); `}>
-    <p class="text-base">{date}</p>
+    <p class="text-base">{new Intl.DateTimeFormat(Astro.preferredLocale, {
+      dateStyle: 'long'
+    }).format(new Date(date))}</p>
     <h1 class="text-xl font-bold">{title}</h1>
   </div>
 </a>
