@@ -1,0 +1,20 @@
+---
+import { getCollection } from "astro:content";
+import Post from "./Post.astro";
+const allPosts = await getCollection("blog");
+
+console.log(allPosts);
+---
+
+<section class="relative !z-50 max-w-6xl mx-10 md:mx-auto">
+  {
+    allPosts.map((post:any) => (
+      <Post
+        title={post.data.title}
+        slug={post.slug}
+        image={post.data.cover}
+        date={post.data.date}
+      />
+    ))
+  }
+</section>

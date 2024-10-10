@@ -5,6 +5,7 @@ import Hero from "../components/Hero.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 import SectionTitle from "../components/SectionTitle.astro";
 import content from "../content";
+import BlogEntries from "../components/BlogEntries.astro";
 
 ---
 
@@ -18,5 +19,9 @@ import content from "../content";
         />
       )
     })}
+    <SectionTitle title="Blog" />
+    <BlogEntries />
+
+    <div class="h-96"></div>
   </main>
 </Layout>

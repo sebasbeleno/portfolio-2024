@@ -1,0 +1,27 @@
+---
+import { CldImage } from "astro-cloudinary";
+import { getCldOgImageUrl } from 'astro-cloudinary/helpers';
+
+interface PostProps {
+  title: string;
+  date: string;
+  content: string;
+  image: string;
+  slug: string;
+}
+
+const { title, date, content, image, slug } = Astro.props;
+
+const imageURL = getCldOgImageUrl({
+  src: image,
+  opacity: 50,
+  background: "rgb:000000",
+})
+
+---
+<a href={"/blog/" + slug}>
+  <div class="min-h-64 p-10 bg-black hover:rounded-2xl rounded-lg transition-all flex flex-col-reverse hover:border-purple-200 border border-solid border-transparent" style={`background-image: url(${imageURL}); `}>
+    <p class="text-base">{date}</p>
+    <h1 class="text-xl font-bold">{title}</h1>
+  </div>
+</a>

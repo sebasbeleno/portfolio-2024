@@ -4,7 +4,9 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
   animation: {
     "background-shine": "background-shine 2s linear infinite",
   },
