@@ -46,7 +46,6 @@ const SmoothScroll: React.FC<{ children: React.ReactNode }> = ({
 
   // Turn on transform only once page has loaded, to prevent spring jumping on initial load
   useMotionValueEvent(smoothProgress, "change", (latest) => {
-    console.log(latest);
     if (latest === 0) {
       setIsLoading(false);
     }

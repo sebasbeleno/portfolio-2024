@@ -10,12 +10,26 @@ import ReportLogo from "/public/reportLogo.png";
 import ReportBackoundImage from "/public/reportCardBackground.png";
 import type { ProjectCardsProps } from "./components/ProjectCard.astro";
 
+import QuickBackgroundImage from "/public/quick_bg.png";
+import QuickLogo from "/public/quickLogo.png";
+import QuickMock from "/public/quickMock.png";
+
+
 interface ContentType {
   projects: ProjectCardsProps[];
 }
 
 const content: ContentType = {
   projects: [
+    {
+      backgroundImage: QuickBackgroundImage,
+      logo: QuickLogo,
+      image: QuickMock,
+      projectTitle: "QuickJS",
+      projectShortDesc: "Personal and portable javascript and Typescript playground",
+      longDesc: "QuickJS is a personal and portable javascript and Typescript playground. It allows users to write and run javascript and Typescript code in a simple and easy-to-use interface. QuickJS is designed to be fast, lightweight, and easy to use, making it the perfect tool for developers who want to quickly test and experiment with javascript and Typescript code.",
+      githubUrl: "https://github.com/sebasbeleno/quickjs  "
+    },
     {
       backgroundImage: TransfirioBackgroundImage,
       logo: TransfirioLogo,

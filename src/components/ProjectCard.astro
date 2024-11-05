@@ -28,12 +28,6 @@ const {
   coomingSoon,
 } = Astro.props;
 
-const optimizedBackgroundImage = await getImage({
-  src: backgroundImage,
-  format: "webp",
-  inferSize: true,
-});
-
 const optmiizedLogo = await getImage({
   src: logo,
   format: "webp",
@@ -42,7 +36,7 @@ const optmiizedLogo = await getImage({
 
 <section
   class="relative !z-50 max-w-6xl mx-10 md:mx-auto px-4 sm:px-6 rounded-lg md:h-96 h-96 mb-10 overflow-hidden bg-cover "
-  style={`background-image: url(${optimizedBackgroundImage.src}); `}
+  style={`background-image: url(${backgroundImage.src}); `}
 >
   </div>
   <div class="group h-full flex md:flex-col flex-row items-center md:items-stretch justify-center">
@@ -68,7 +62,7 @@ const optmiizedLogo = await getImage({
           <Image
             src={image}
             alt="Project Mock"
-            class="md:w-80 -right-10 hidden md:block"
+            class="md:w-96 hidden md:block"
             loading={"eager"}
           />
         )
